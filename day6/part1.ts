@@ -3,9 +3,9 @@ import { readFile } from "fs/promises";
 const toi = Number.parseInt;
 
 (async () => {
-    // const lanternFish = (await readFile("./day6/data.txt", "utf-8"))
-    //     .split("\n")[0]
-    const lanternFish = "3,4,3,1,2"
+    const lanternFish = (await readFile("./day6/data.txt", "utf-8"))
+        .split("\n")[0]
+    // const lanternFish = "3,4,3,1,2"
         .split(",")
         .map(numStr => toi(numStr));
 
